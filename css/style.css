@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(/css/mobile.css);
+@import url(/css/tablet.css);
 *{
     margin: 0;
     padding: 0;
