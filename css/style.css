@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(/css/mobile.css);
+@import url(/css/tablet.css);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --cor-01: #f3a108;
+    --cor-02: #000;
+    --cor-03: #C1BEBF;
+    --cor-04: #FFF;
+    --fonte-principal:"Funnel Sans", sans-serif;
+    --fonte-secundaria:"Noto Serif", serif;;
+}
+
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cabecalho{
+    background-color: var(--cor-02);
+}
+
+.container_menu #logo{
+    display: block;
+    width: 100px;
+    max-width: 100%;
+}
+
+.container_menu #menu_hamburguer{
+    display: none;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.container_menu #menu ul li a{
+    color: var(--cor-04);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    transition: all .3s linear;
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+   
+}
+
+#menu ul li a:hover{
+    background-color: var(--cor-01);
+    transform: scale(1.2);
+}
+
+.titulo{
+    font-size: 2em;
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+    text-align: center;
+    margin: 1em 0;
+    color: var(--cor-02);
+   
+}
+
+#historia .container p{
+    padding: 20px;
+    border-radius: 1em;
+    background-color: #d3d3d3;
+}
+
+#historia .ceo_arena{
+    font-size: 2.5em;
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    text-align: center;
+    margin:  1em 0;
+    color: var(--cor-02);
+}
+
+#historia .familia_arena{
+    width: 100%;
+    margin: 2em 0 0 5em;
+    border-radius: 1em;
+    max-width: 800px;
+}
+
+#banners .container{
+    float: none;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#banners .novidades{
+    padding: 1em;
+    color: var(--cor-02);
+    font-size: 1.5em;
+}
+
+.subtitulo_reserva{
+    text-align: center;
+    margin: 2em 0 1em;
+    font-size: 1.5em;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--cor-02);
+}
+
+.dentro_arena {
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.dentro_arena img{
+    width: 100%;
+    max-width: 400px;
+    margin: 2em 0 0 5em;
+    border-radius: 20px;
+
+}
+
+#reserva .container p{
+    text-align: center;
+    padding: 20px;
+    border-radius: 1em;
+    background-color: #d3d3d3;
+}
+
+.titulo_localizacao{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    align-items: center;
+    color: var(--cor-02);
+    margin: 1em 0 1em;
+}
+
+.titulo_cardapio{
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    font-size: 3em;
+    color: var(--cor-02);
+    margin: 1em;
+}
+
+
+#localizacao .container{
+    align-items: center;
+    text-align: center;
+}
+
+.container #mapa{
+    border-radius: 10px;
+}
+
+.subtitulo_localizacao{
+    margin-top: 2em;
+    text-align: center;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--cor-02);
+}
+
+
+.cardapio_subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 2em;
+    text-align: center;
+    margin: 2em;
+}
+
+.consulta_delivery{
+    width: 900px;
+    max-width: 100%;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    margin: 5% auto;
+}
+
+/* GRID - mantém 3 colunas centralizadas */
+#cardapio_imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 0 15px;
+}
+
+/* Cada card */
+.card {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-top: 2em ;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Parte giratória */
+.card-inner {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+/* Girar ao hover */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Faces */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagem */
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Verso */
+.card-back {
+    background-color: var(--cor-02);
+    transform: rotateY(180deg);
+    padding: 15px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    color: var(--cor-01);
+}
+
+#reserva p, #historia p{
+    text-align: justify;
+    margin-top: 0.5em;
+}
+
+
+#historia .fachada_arena{
+    display: block;
+    width: 800px;
+    margin: 5em;
+    border-radius: 30px;
+    align-items: center;
+    
+}
+
+.owl-carousel img {
+    width: 100%;
+    height: 400px; /* Defina a altura desejada */
+    object-fit: cover; /* Mantém a proporção cortando se necessário */
+    object-position: center; /* Centraliza a imagem */
+    border-radius: 1em;
+    margin: 3em 3em 3em 3em;
+}
+
+#historia #interior{
+    width: 200px;
+    border-radius: 20px;
+}
+
+#banners .container{
+    width: 35%;
+}
+
+
+#rodape{
+    background-color: var(--cor-02);
+    color: var(--cor-04);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+#rodape a{
+    text-decoration: none;
+    color: var(--cor-04);
+}
+
+#rodape a:hover{
+    text-decoration: underline;
+    color: var(--cor-01);
+}
+
+

@@ -1,0 +1,124 @@
+
+@media screen and (max-width: 768px) {
+  .container_menu #menu{
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 3px;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+  }
+
+  #menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu ul li {
+  padding: 10px;
+  text-align: center;
+  }
+
+  #menu.open {
+  display: block;
+  }
+
+  #menu ul li a{
+  text-decoration: none;
+  }
+
+  #logo{
+    width: 100px;
+    margin-right: 100px;
+  }
+
+  .titulo{
+    text-align:center;
+  }
+
+  .container_menu{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .container_menu #menu_hamburguer{
+    display: block;
+    margin-left: 1em;
+    cursor: pointer;
+  }
+
+  #historia .container p{
+    display: flex;
+    margin: 30px;
+    text-align:start;
+    line-height: 1em;
+    
+  }
+
+  #historia .container p{
+    padding: 2em;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--cor-02);
+    font-size:  20px;
+  }
+
+  #historia .container .fachada_arena{
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #historia .container .familia_arena{
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #banners{
+    display: none;
+  }
+
+  .subtitulo_reserva{
+    margin-right: 3.1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #reserva .container p{
+    margin-right: 3.1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .dentro_arena img{
+    width: 300px;
+    margin: 10px 0 0 20px;
+  }
+
+  .owl-carousel {
+    display: none !important;
+  }
+  
+  #localizacao .container iframe{
+    width: 90%;
+    margin-right: 100px;
+  }
+
+  .subtitulo_localizacao{
+    width: 200px;
+    margin-left: 50px;
+  }
+
+  
+}

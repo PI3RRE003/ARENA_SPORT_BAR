@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="/ARENA_SPORT_BAR/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/fotos/logo_arena.png" type="image/x-icon">
+    <title>Arena Sport Bar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/bxslider.min.js"></script>
+    <link rel="stylesheet" href="plugins/bxslider.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="../plugins/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div class="container_menu">
+        <img src="images/fotos/menu_hamburguer.svg" alt="menu hamburguer" id="menu_hamburguer" onclick="toggleMenu()">
+        <a href="index.html"><img src="images/fotos/logo_arena.png" alt="Logo Arena" id="logo"  /></a>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="pages/cardapio.html">Cardapio</a>
+              
+            </li>
+            <li>
+              <a href="https://arenasportbar.menudino.com/" target="_blank">Delivery</a>
+            </li>
+            <li>
+              <a href="pages/reserva.html" >Reserva de Mesas</a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=5582988352878" target="_blank">Atendimento whatsapp</a>
+            </li>
+            <li>
+              <a href="index.html">Sobre</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h2 class="titulo_localizacao">Localização</h2>
+
+    <section id="localizacao">
+      <div class="container">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d984.8572550758751!2d-37.6128869!3d-9.1156653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7088d5d188b07b3%3A0x296a93af15d53ea4!2sArena%20Sport%20Bar!5e0!3m2!1spt-BR!2sbr!4v1747921805033!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+        
+        <h3 class="subtitulo_localizacao">Não deixe para a última hora. <br>As mesas são limitadas e a casa lota rápido.
+            📲 Faça sua reserva <a href="http://">agora</a> e viva o melhor da noite no Arena Sport Bar.</h3>
+
+      </div>
+    </section>
+
+    <div class="owl-carousel">
+      <div><img src="images/fotos/espaco_interno.png" alt="img1" /></div>
+      <div><img src="images/fotos/espaco_interno_2.png" alt="img2" /></div>
+      <div><img src="images/fotos/post_influencer_3.png" alt="img3" /></div>
+      <div><img src="images/fotos/chopeiro_arena.png" alt="img4" /></div>
+      <div><img src="images/fotos/anuncio_show_24_05.png" alt="img5" /></div>
+    </div>
+
+    <footer id="rodape">
+      <span>
+        Site desenvolvido na disciplina de Introdução à Tecnologia Web do 1º
+        período do curso de Sistema de Informação do UniRios - Paulo
+        Afonso/BA<br />
+        Vitor Pierre -
+        <a
+          href="https://www.instagram.com/vitorpierree?igsh=NWR4bGt2MnRjbmg1&utm_source=qr"
+          target="_blank"
+          >vitorpierree</a
+        >
+      </span>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          center: true,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 3 },
+            1000: { items: 5 },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
