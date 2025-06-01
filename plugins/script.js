@@ -30,8 +30,8 @@ $(document).ready(function () {
     
 });
 
-document.querySelector('menu_hamburger').addEventListener('click', toggleMenu);
-document.querySelector('menu_hamburger').addEventListener('touchstart', toggleMenu);
+document.querySelector('menu_hamburguer').addEventListener('click', toggleMenu);
+document.querySelector('menu_hamburguer').addEventListener('touchstart', toggleMenu);
 
 function toggleMenu() {
     const menu = document.querySelector('.menu');
