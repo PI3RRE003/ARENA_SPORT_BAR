@@ -30,6 +30,14 @@ $(document).ready(function () {
     
 });
 
+document.querySelector('menu_hamburger').addEventListener('click', toggleMenu);
+document.querySelector('menu_hamburger').addEventListener('touchstart', toggleMenu);
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('open');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
       console.log('DOM carregado');
       const buttons = document.querySelectorAll('.filter-btn');
