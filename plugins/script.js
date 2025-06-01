@@ -30,13 +30,30 @@ $(document).ready(function () {
     
 });
 
-document.querySelector('menu_hamburguer').addEventListener('click', toggleMenu);
-document.querySelector('menu_hamburguer').addEventListener('touchstart', toggleMenu);
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('#menu_hamburguer');
+    const menu = document.querySelector('#menu');
 
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('open');
-}
+    // Depuração para verificar se os elementos foram encontrados
+    if (!hamburger) {
+        console.error('Elemento #menu_hamburguer não encontrado. Verifique se o <img> tem o ID "menu_hamburguer".');
+    }
+    if (!menu) {
+        console.error('Elemento #menu não encontrado. Verifique se o <nav> tem o ID "menu".');
+    }
+
+    if (hamburger && menu) {
+        hamburger.addEventListener('click', toggleMenu);
+        hamburger.addEventListener('touchstart', toggleMenu); // Suporte para mobile
+
+        function toggleMenu() {
+            menu.classList.toggle('open');
+            console.log('Menu toggled:', menu.classList.contains('open') ? 'Aberto' : 'Fechado');
+        }
+    } else {
+        console.error('Não foi possível inicializar o menu. Um ou ambos os elementos (#menu_hamburguer, #menu) estão faltando.');
+    }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
       console.log('DOM carregado');
