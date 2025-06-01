@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @media screen and (max-width: 768px) {
   .container_menu #menu{
@@ -121,4 +122,8 @@
   }
 
   
+=======
+@media screen and (max-width: 480px) {
+  /* Estilos para telas muito pequenas */
+>>>>>>> origin/main
 }
