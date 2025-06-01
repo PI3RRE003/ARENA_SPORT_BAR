@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 768px) {
   .container_menu #menu{
     display: none;
@@ -8,7 +7,6 @@
     background-color: #000000;
     padding: 10px;
     border-radius: 3px;
-    transition: max-height 0.3s ease-out;
     overflow: hidden;
   }
 
@@ -27,6 +25,7 @@
 
   #menu.open {
   display: block;
+  z-index: 1000;
   }
 
   #menu ul li a{
@@ -35,7 +34,7 @@
 
   #logo{
     width: 100px;
-    margin-right: 100px;
+    margin-left: 60px;
   }
 
   .titulo{
@@ -119,4 +118,6 @@
     width: 200px;
     margin-left: 50px;
   }
+
+  
 }

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
     .container_menu #menu{
     display: none;
     position: absolute;
@@ -9,6 +9,10 @@
     border-radius: 3px;
     transition: max-height 0.3s ease-out;
     overflow: hidden;
+  }
+
+  .container_menu #menu_hamburguer{
+    display: block;
   }
 
   #menu ul{
