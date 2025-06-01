@@ -30,29 +30,13 @@ $(document).ready(function () {
     
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('#menu_hamburguer');
-    const menu = document.querySelector('#menu');
+document.addEventListener('DOMContentLoaded', function () {
+  const menuHamburguer = document.getElementById('menu_hamburguer');
+  const menu = document.getElementById('menu');
 
-    // Depuração para verificar se os elementos foram encontrados
-    if (!hamburger) {
-        console.error('Elemento #menu_hamburguer não encontrado. Verifique se o <img> tem o ID "menu_hamburguer".');
-    }
-    if (!menu) {
-        console.error('Elemento #menu não encontrado. Verifique se o <nav> tem o ID "menu".');
-    }
-
-    if (hamburger && menu) {
-        hamburger.addEventListener('click', toggleMenu);
-        hamburger.addEventListener('touchstart', toggleMenu); // Suporte para mobile
-
-        function toggleMenu() {
-            menu.classList.toggle('open');
-            console.log('Menu toggled:', menu.classList.contains('open') ? 'Aberto' : 'Fechado');
-        }
-    } else {
-        console.error('Não foi possível inicializar o menu. Um ou ambos os elementos (#menu_hamburguer, #menu) estão faltando.');
-    }
+  menuHamburguer.addEventListener('click', function() {
+    menu.classList.toggle('open');
+  });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
