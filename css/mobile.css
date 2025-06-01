@@ -116,12 +116,11 @@
   
   #localizacao .container iframe{
     width: 90%;
-    margin-right: 100px;
   }
 
   .subtitulo_localizacao{
-    width: 200px;
-    margin-left: 50px;
+    width: 400px;
+    text-align: center;
   }
 
   
