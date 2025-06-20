@@ -105,6 +105,7 @@
   .subtitulo_reserva {
     padding: 1rem;
     text-align: center;
+    color: #fff;
   }
 
   #reserva .container p {
@@ -112,6 +113,7 @@
     text-align: center;
     border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
   }
 
   .dentro_arena {
