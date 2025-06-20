@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
 
   body {
-    background: url(images/fotos/background_mobile.jpg)no-repeat center center;
+    background: url(../images/fotos/background_mobile.jpg)no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
   }
