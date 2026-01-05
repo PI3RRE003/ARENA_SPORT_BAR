@@ -43,26 +43,27 @@ jQuery: Biblioteca JavaScript para suporte a plugins.
 
 bxSlider / Slick Carousel: Bibliotecas para os banners e sliders de imagens.
 
-📁 Estrutura de Pastas
-Para que o projeto funcione corretamente, a árvore de diretórios deve seguir este padrão:
+### 📁 Estrutura de Pastas
 
+```plaintext
 /
-├── index.html            # Página principal
-├── reset.css             # Reset de estilos (Meyer)
+├── index.html
+├── reset.css
 ├── css/
-│   ├── style.css         # Estilos globais/Desktop
-│   ├── tablet.css        # Ajustes para tablets
-│   └── mobile.css        # Ajustes para celulares
+│   ├── style.css
+│   ├── tablet.css
+│   └── mobile.css
 ├── images/
-│   └── fotos/            # Imagens e logotipos
+│   └── fotos/
 ├── plugins/
-│   ├── jquery.min.js     # Dependência JS
-│   ├── bxslider.min.js   # Plugin de slider
-│   └── script.js         # Lógica personalizada (ex: menu hambúrguer)
+│   ├── jquery.min.js
+│   ├── bxslider.min.js
+│   └── script.js
 └── pages/
-    ├── cardapio.html     # Página de cardápio
-    ├── reserva.html      # Página de reservas
-    └── ...
+    ├── cardapio.html
+    └── reserva.html
+```
+
 ## 👨‍💻 Autor
 Vitor Pierre - Estudante de Sistemas de Informação (UniRios).
 
