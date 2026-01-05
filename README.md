@@ -73,3 +73,5 @@ Vitor Pierre - Estudante de Sistemas de Informação (UniRios).
 
 <img width="1920" height="1080" alt="Captura de tela 2026-01-05 150058" src="https://github.com/user-attachments/assets/222194fe-8551-4df0-9832-b6db6f73f99c" />
 
+## 📄 Licença
+Este projeto é para fins educacionais e de gestão interna.
